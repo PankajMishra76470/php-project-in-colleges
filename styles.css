@@ -18,6 +18,16 @@
     margin: auto;
 
 }
+.navbar{
+    position: relative;
+}
+.welcome{
+    position: absolute;
+    top: 80%;
+    left: 33%;
+    right: 0;
+    color: #ff7200;
+}
 .icon{
     width: 200px;
     float: left;

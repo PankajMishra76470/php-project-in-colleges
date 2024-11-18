@@ -8,12 +8,13 @@
     background: linear-gradient(to top, rgba(0,0,0.5)50%, rgba(0,0,0.5)50%,) url(BACKGROUND.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height:109vh;
 
 }
 
 .navbar{
-    width: 1200px;
+    width: 1300px;
     height: 75px;
     margin: auto;
 
@@ -28,11 +29,18 @@
     right: 0;
     color: #ff7200;
 }
+.welcome span{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Times New Roman;
+}
 .icon{
     width: 200px;
     float: left;
     height: 70px;
-
+}
+.icon img{
+    object-fit: cover;
 }
 .logo{
     color: #ff7200;
@@ -77,7 +85,7 @@ ul li a:haver{
 .search{
     width: 330px;
     float: left;
-    margin-left: 270px;
+    margin-left: 260px;
 
 }
 .srch{
@@ -116,13 +124,27 @@ ul li a:haver{
     outline: none;
      
  }
+ .navbar .log-in .log-btn{
+    margin-top: 15px;
+    padding: 10px 10px;
+    background-color: #ff7200;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+ }
  .content{
     width: 1200px;
     height: auto;
     margin: auto;
     color: white;
     position: relative;
-
+ }
+ .back-video{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
  }
  .content .par{
     padding-left: 20px;
@@ -266,3 +288,91 @@ ul li a:haver{
     color: #ff7200;
 
 }
+/*Footer Section*/
+.footer-main{
+    background-color: black;
+}
+.footer-content{
+    width: 1200px;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+.footer-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-name h3,.footer-company h3,
+.footer-service h3,.footer-newsletter h3{
+    color: #ff7200;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-name .muted-txt{
+    margin-top: 16px;
+    color: #a3a3a3;
+    font-size: 14px;
+}
+.footer-name .icon{
+    margin-top: 16px;
+}
+.footer-company .footer-nav{
+    display: block;
+    margin-top: 16px;
+}
+.footer-company .footer-nav li:first-child{
+    margin-top: 0;
+}
+.footer-company .footer-nav li{
+    margin-left: 0;
+    margin-top: 10px;
+}
+.footer-company .footer-nav li a{
+    font-size: 14px;
+    font-weight: unset;
+}
+.footer-service .footer-nav{
+    display: block;
+    margin-top: 16px;
+}
+.footer-service .footer-nav li:first-child{
+    margin-top: 0;
+}
+.footer-service .footer-nav li{
+    margin-left: 0;
+    margin-top: 10px;
+}
+.footer-service .footer-nav li a{
+    font-size: 14px;
+    font-weight: unset;
+}
+.txt-box{
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.news-btn{
+    height: 40px;
+    background-color: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer-newsletter .muted-txt {
+    margin-top: 16px;
+    color: #a3a3a3;
+    font-size: 14px;
+}
+/*Footer Section*/
